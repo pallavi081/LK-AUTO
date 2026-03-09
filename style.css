@@ -1,4 +1,53 @@
-/* ===============================
+h1,h2,h3{
+font-weight:700;
+margin-bottom:10px;
+}
+
+p{
+margin-bottom:10px;
+}
+
+/* language visibility */
+
+.lang-hindi{
+display:none;
+}
+
+.lang-english{
+display:block;
+}
+
+/* navigation layout */
+
+nav{
+display:flex;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+/* language button */
+
+#lang-toggle{
+border:1px solid var(--primary);
+padding:5px 10px;
+border-radius:5px;
+cursor:pointer;
+margin-left:10px;
+}
+
+/* hero animation */
+
+.hero-content{
+opacity:0;
+transform:translateY(40px);
+transition:0.8s;
+}
+
+.hero-content.animated{
+opacity:1;
+transform:translateY(0);
+}/* ===============================
 GLOBAL
 ================================ */
 
