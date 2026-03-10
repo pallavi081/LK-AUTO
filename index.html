@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -17,9 +18,9 @@
 
 <header>
 
-<div class="logo-area">
-<h1>LK AUTO</h1>
-<p>Bike Repair & Parts</p>
+<div class="logo">
+LK AUTO
+<span>Bike Repair & Parts</span>
 </div>
 
 <nav>
@@ -27,16 +28,17 @@
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
 <a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 
-<button onclick="toggleLanguage()" class="lang-btn">
-हिंदी
-</button>
+<button onclick="setLanguage('en')" class="lang-btn">English</button>
+<button onclick="setLanguage('hi')" class="lang-btn">हिंदी</button>
 
 </nav>
 
 </header>
+
 
 <!-- HERO SECTION -->
 
@@ -44,87 +46,58 @@
 
 <div class="hero-text">
 
-<h2 class="en">Welcome to LK AUTO</h2>
-<h2 class="hi">एलके ऑटो में आपका स्वागत है</h2>
+<h1 class="en">Welcome to LK AUTO</h1>
+<h1 class="hi">एल के ऑटो में आपका स्वागत है</h1>
 
-<h3 class="en">Trusted Bike Service Center in Kotwa Bazar, Motihari</h3>
+<h3 class="en">Trusted Bike Service Center at Kotwa Bazar, Motihari</h3>
 <h3 class="hi">कोटवा बाजार, मोतिहारी का भरोसेमंद बाइक सर्विस सेंटर</h3>
 
 <p class="en">
-Founded by Lal Kishor Shrivastav. We provide expert motorcycle repair,
-genuine spare parts, engine oil and accessories.
+Founded by Lal Kishor Shrivastav, we offer expert repair,
+genuine spare parts, engine oil, and accessories for all motorcycles.
 </p>
 
 <p class="hi">
-लाल किशोर श्रीवास्तव द्वारा स्थापित। यहाँ सभी बाइक की मरम्मत,
-ओरिजिनल स्पेयर पार्ट्स और इंजन ऑयल उपलब्ध हैं।
+लाल किशोर श्रीवास्तव द्वारा स्थापित।
+यहाँ सभी बाइक की मरम्मत, स्पेयर पार्ट्स और इंजन ऑयल उपलब्ध हैं।
 </p>
 
-<a href="tel:9801236695" class="btn">
-📞 Call Now
-</a>
+<a href="tel:9801236695" class="btn">📞 Call Now</a>
 
 </div>
 
-<div class="hero-image">
+<div class="hero-logo">
 
-<img src="logo.png">
+<img src="father shree.jpg" alt="LK AUTO">
 
 </div>
 
 </section>
 
 
-<!-- FEATURES -->
+<!-- WHY CHOOSE US -->
 
-<section class="features">
+<section id="about" class="section">
 
-<h2 class="en">Trusted Bike Repair Shop</h2>
-<h2 class="hi">विश्वसनीय बाइक रिपेयर शॉप</h2>
+<h2 class="en">Why Choose LK AUTO</h2>
+<h2 class="hi">क्यों चुनें LK AUTO</h2>
 
-<ul>
-
-<li>✔ Expert Motorcycle Mechanics</li>
-<li>✔ Genuine Spare Parts</li>
-<li>✔ Fast & Affordable Service</li>
-<li>✔ All Bike Models Serviced</li>
-
-</ul>
-
-<a href="tel:9801236695" class="call-btn">
-Call For Instant Service
-</a>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about" class="services">
-
-<h2 class="en">Why Choose LK AUTO?</h2>
-<h2 class="hi">क्यों चुनें LK AUTO?</h2>
-
-<div class="service-grid">
+<div class="grid">
 
 <div class="card">
-<h3>Experienced Mechanics</h3>
-<p>Years of experience repairing motorcycles.</p>
+🔧 Expert Mechanics
 </div>
 
 <div class="card">
-<h3>Genuine Spare Parts</h3>
-<p>Only original spare parts available.</p>
+⚙ Genuine Spare Parts
 </div>
 
 <div class="card">
-<h3>Affordable Service</h3>
-<p>High quality service at affordable price.</p>
+⏱ Fast Service
 </div>
 
 <div class="card">
-<h3>Fast Repair</h3>
-<p>Quick bike repair and maintenance.</p>
+💰 Affordable Prices
 </div>
 
 </div>
@@ -134,31 +107,31 @@ Call For Instant Service
 
 <!-- SERVICES -->
 
-<section id="services" class="services">
+<section id="services" class="section">
 
 <h2 class="en">Our Services</h2>
 <h2 class="hi">हमारी सेवाएँ</h2>
 
-<div class="service-grid">
+<div class="grid">
 
 <div class="card">
 <h3>Bike Repair</h3>
-<p>Complete motorcycle repair service.</p>
+<p>Professional motorcycle repair service.</p>
 </div>
 
 <div class="card">
 <h3>Engine Oil</h3>
-<p>High quality engine oil available.</p>
+<p>High quality engine oils available.</p>
 </div>
 
 <div class="card">
 <h3>Spare Parts</h3>
-<p>Original spare parts for many brands.</p>
+<p>Original spare parts available.</p>
 </div>
 
 <div class="card">
 <h3>Accessories</h3>
-<p>Helmets, seat covers and bike accessories.</p>
+<p>Helmets, guards and bike accessories.</p>
 </div>
 
 </div>
@@ -166,30 +139,60 @@ Call For Instant Service
 </section>
 
 
-<!-- REVIEWS -->
+<!-- GALLERY -->
 
-<section id="reviews" class="services">
+<section id="gallery" class="section">
 
-<h2>Customer Reviews</h2>
+<h2 class="en">Shop Gallery</h2>
+<h2 class="hi">दुकान की गैलरी</h2>
 
-<div class="service-grid">
+<div class="gallery">
+
+<img src="papa shop.jpg" alt="Shop">
+
+<img src="father shree.jpg" alt="Owner">
+
+<img src="father shree 0.1.jpg" alt="Service Banner">
+
+</div>
+
+</section>
+
+
+<!-- CUSTOMER REVIEWS -->
+
+<section id="reviews" class="section">
+
+<h2 class="en">Customer Reviews</h2>
+<h2 class="hi">ग्राहक समीक्षा</h2>
+
+<div class="grid">
 
 <div class="card">
-<p>⭐⭐⭐⭐⭐</p>
-<p>Very good bike repair service.</p>
-<strong>Local Customer</strong>
+
+⭐⭐⭐⭐⭐
+
+<p class="en">Best bike repair shop in Kotwa.</p>
+<p class="hi">कोटवा की सबसे अच्छी बाइक रिपेयर दुकान।</p>
+
 </div>
 
 <div class="card">
-<p>⭐⭐⭐⭐⭐</p>
-<p>Best mechanic in Kotwa Bazar.</p>
-<strong>Ravi Kumar</strong>
+
+⭐⭐⭐⭐⭐
+
+<p class="en">Very good service and genuine parts.</p>
+<p class="hi">बहुत अच्छी सर्विस और असली पार्ट्स।</p>
+
 </div>
 
 <div class="card">
-<p>⭐⭐⭐⭐⭐</p>
-<p>Affordable and fast service.</p>
-<strong>Amit Singh</strong>
+
+⭐⭐⭐⭐⭐
+
+<p class="en">Fast and affordable bike repair.</p>
+<p class="hi">तेज़ और सस्ती बाइक रिपेयर।</p>
+
 </div>
 
 </div>
@@ -199,20 +202,14 @@ Call For Instant Service
 
 <!-- CONTACT -->
 
-<section id="contact" class="features">
+<section id="contact" class="section">
 
 <h2 class="en">Contact LK AUTO</h2>
 <h2 class="hi">संपर्क करें</h2>
 
-<p>
-📍 Overbridge West, Kotwa Bazar, Motihari
-</p>
+<p>📍 Overbridge West, Kotwa Bazar, Motihari</p>
 
-<p>
-📞 9801236695
-</p>
-
-<!-- Google Map -->
+<p>📞 9801236695</p>
 
 <iframe
 src="https://www.google.com/maps?q=Kotwa+Bazar+Motihari&output=embed"
@@ -225,46 +222,50 @@ loading="lazy">
 </section>
 
 
-<!-- WHATSAPP BUTTON -->
-
-<a href="https://wa.me/919801236695" class="whatsapp">
-💬 Chat
-</a>
-
-
-<!-- CALL BUTTON -->
-
-<a href="tel:9801236695" class="call">
-📞 Call
-</a>
-
-
 <footer>
-
-<h3>LK AUTO</h3>
-
-<p>Overbridge West, Kotwa Bazar, Motihari</p>
-
-<p>📞 9801236695</p>
 
 <p>© 2025 LK AUTO</p>
 
 </footer>
 
 
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/919801236695" class="whatsapp">
+WhatsApp
+</a>
+
+
+<!-- CALL BUTTON -->
+
+<a href="tel:9801236695" class="callbtn">
+Call
+</a>
+
+
+<!-- LANGUAGE SCRIPT -->
+
 <script>
 
-function toggleLanguage(){
+function setLanguage(lang){
 
-document.querySelectorAll(".en").forEach(el=>{
-el.style.display = el.style.display === "none" ? "block":"none"
-})
+if(lang=="hi"){
 
-document.querySelectorAll(".hi").forEach(el=>{
-el.style.display = el.style.display === "block" ? "none":"block"
-})
+document.querySelectorAll(".en").forEach(el=>el.style.display="none")
+document.querySelectorAll(".hi").forEach(el=>el.style.display="block")
 
 }
+
+else{
+
+document.querySelectorAll(".en").forEach(el=>el.style.display="block")
+document.querySelectorAll(".hi").forEach(el=>el.style.display="none")
+
+}
+
+}
+
+setLanguage("en")
 
 </script>
 
