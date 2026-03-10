@@ -141,7 +141,23 @@ nav a:hover{
 color:var(--primary);
 
 }
+/* HERO BACKGROUND */
 
+.hero-section{
+
+background-image:linear-gradient(
+rgba(0,0,0,0.7),
+rgba(0,0,0,0.7)
+),
+url("https://images.unsplash.com/photo-1558980394-0c3b9a1c1e9f");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+color:white;
+
+}
 /* ===============================
 HERO SECTION
 ================================ */
