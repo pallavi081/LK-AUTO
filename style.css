@@ -461,3 +461,20 @@ transition:0.3s;
 background:#ff6a33;
 transform:scale(1.05);
 }
+.profile-image img{
+border:5px solid #ff4d00;
+background:#111;
+}
+.hero-content p{
+color:#d1d5db;
+font-size:17px;
+}
+header{
+background:#111827;
+border-bottom:2px solid #ff4d00;
+}
+
+header{
+background:#111827;
+border-bottom:2px solid #ff4d00;
+}
