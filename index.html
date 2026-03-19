@@ -1,273 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>LK AUTO Motihari | Bike Repair & Spare Parts</title>
-
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
 
-<header>
+<div id="particles-js"></div>
 
-<div class="logo">
-LK AUTO
-<span>Bike Repair & Parts</span>
+<header class="reveal-hidden">
+<div style="display: flex; align-items: center; gap: 20px;">
+  <a href="#" class="logo">
+    <svg class="logo-svg" viewBox="0 0 120 120" width="55" height="55">
+      <circle cx="60" cy="60" r="54" fill="none" stroke="url(#logo-grad)" stroke-width="6" stroke-dasharray="350" stroke-dashoffset="350" class="logo-circle" />
+      <path d="M 40 40 L 40 80 L 55 80 M 65 40 L 65 80 M 85 40 L 65 60 L 85 80" stroke="#f8fafc" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" class="logo-letters" />
+      <path d="M 35 90 L 85 90" stroke="#ff5722" stroke-width="5" stroke-linecap="round" class="logo-accent" />
+      <defs>
+        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ff5722"/>
+          <stop offset="100%" stop-color="#ff9800"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <div class="logo-text">
+      LK AUTO
+      <span>Bike Repair & Parts</span>
+    </div>
+  </a>
+
+  <!-- Secondary Logo (Badge/Wrench) -->
+  <a href="#" class="logo secondary-logo" style="opacity: 0.9;">
+    <svg class="logo-svg" viewBox="0 0 120 120" width="45" height="45">
+      <circle cx="60" cy="60" r="45" fill="none" stroke="#f8fafc" stroke-width="4" stroke-dasharray="8 8" class="logo-circle" style="animation: spin 10s linear infinite; transform-origin: center;"/>
+      <path d="M 45 75 L 75 45 A 12 12 0 1 0 85 35 A 12 12 0 0 0 75 45" stroke="#ff5722" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" class="logo-letters" />
+      <circle cx="60" cy="60" r="10" stroke="#f8fafc" stroke-width="4" fill="none" class="logo-accent" />
+    </svg>
+  </a>
 </div>
 
-<nav>
+<div class="menu-toggle">
+  <span></span><span></span><span></span>
+</div>
 
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#reviews">Reviews</a>
-<a href="#contact">Contact</a>
-
-<button onclick="setLanguage('en')" class="lang-btn">English</button>
-<button onclick="setLanguage('hi')" class="lang-btn">हिंदी</button>
-
+<nav class="nav-links">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+  <div class="lang-switcher">
+    <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+    <button onclick="setLanguage('hi')" class="lang-btn">हिं</button>
+  </div>
 </nav>
-
 </header>
 
-
 <!-- HERO SECTION -->
-
 <section id="home" class="hero">
-
 <div class="hero-text">
+<h1 class="en reveal-hidden">Welcome to <span class="highlight">LK AUTO</span></h1>
+<h1 class="hi reveal-hidden">एल के ऑटो में <span class="highlight">आपका स्वागत</span> है</h1>
 
-<h1 class="en">Welcome to LK AUTO</h1>
-<h1 class="hi">एल के ऑटो में आपका स्वागत है</h1>
+<h3 class="en reveal-hidden delay-1">Trusted Bike Service Center at Kotwa Bazar, Motihari</h3>
+<h3 class="hi reveal-hidden delay-1">कोटवा बाजार, मोतिहारी का भरोसेमंद बाइक सर्विस सेंटर</h3>
 
-<h3 class="en">Trusted Bike Service Center at Kotwa Bazar, Motihari</h3>
-<h3 class="hi">कोटवा बाजार, मोतिहारी का भरोसेमंद बाइक सर्विस सेंटर</h3>
-
-<p class="en">
-Founded by Lal Kishor Shrivastav, we offer expert repair,
-genuine spare parts, engine oil, and accessories for all motorcycles.
+<p class="en reveal-hidden delay-2">
+Founded by Lal Kishor Shrivastav. We offer expert motorcycle repair,
+genuine spare parts, premium engine oils, and customized accessories for all major brands.
 </p>
 
-<p class="hi">
-लाल किशोर श्रीवास्तव द्वारा स्थापित।
-यहाँ सभी बाइक की मरम्मत, स्पेयर पार्ट्स और इंजन ऑयल उपलब्ध हैं।
+<p class="hi reveal-hidden delay-2">
+लाल किशोर श्रीवास्तव द्वारा स्थापित। 
+यहाँ सभी बाइक की मरम्मत, स्पेयर पार्ट्स, प्रीमियम इंजन ऑयल और एक्सेसरीज उपलब्ध हैं। एकदम नई जैसी सर्विसिंग।
 </p>
 
-<a href="tel:9801236695" class="btn">📞 Call Now</a>
-
+<a href="tel:9801236695" class="btn reveal-hidden delay-3">📞 Call Now for Booking</a>
 </div>
 
-<div class="hero-logo">
-
+<div class="hero-logo reveal-hidden delay-4">
 <img src="father shree.jpg" alt="LK AUTO">
-
 </div>
-
 </section>
-
 
 <!-- WHY CHOOSE US -->
-
 <section id="about" class="section">
-
-<h2 class="en">Why Choose LK AUTO</h2>
-<h2 class="hi">क्यों चुनें LK AUTO</h2>
+<h2 class="en reveal-hidden">Why Choose LK AUTO</h2>
+<h2 class="hi reveal-hidden">क्यों चुनें LK AUTO</h2>
 
 <div class="grid">
-
-<div class="card">
-🔧 Expert Mechanics
+<div class="card reveal-hidden delay-1">
+<div class="icon">🔧</div>
+<h4 class="en">Expert Mechanics</h4>
+<h4 class="hi">कुशल मैकेनिक</h4>
+<p class="en">Years of experience in handling all models securely.</p>
+<p class="hi">सभी मॉडलों को संभालने का वर्षों का अनुभव।</p>
 </div>
-
-<div class="card">
-⚙ Genuine Spare Parts
+<div class="card reveal-hidden delay-2">
+<div class="icon">⚙️</div>
+<h4 class="en">Genuine Spare Parts</h4>
+<h4 class="hi">असली स्पेयर पार्ट्स</h4>
+<p class="en">100% authentic OEM parts for better longevity.</p>
+<p class="hi">बेहतर जीवन के लिए 100% असली OEM पार्ट्स।</p>
 </div>
-
-<div class="card">
-⏱ Fast Service
+<div class="card reveal-hidden delay-3">
+<div class="icon">⏱️</div>
+<h4 class="en">Fast Service</h4>
+<h4 class="hi">तेज़ सर्विस</h4>
+<p class="en">Quick turnaround times because we value your time.</p>
+<p class="hi">जल्द से जल्द काम पूरा करना क्योंकि हम आपके समय की कद्र करते हैं।</p>
 </div>
-
-<div class="card">
-💰 Affordable Prices
+<div class="card reveal-hidden delay-4">
+<div class="icon">💰</div>
+<h4 class="en">Affordable Prices</h4>
+<h4 class="hi">किफायती दाम</h4>
+<p class="en">Premium quality repairs that don't empty your wallet.</p>
+<p class="hi">प्रीमियम गुणवत्ता वाली मरम्मत जो आपकी जेब खाली नहीं करती।</p>
 </div>
-
 </div>
-
 </section>
-
 
 <!-- SERVICES -->
-
 <section id="services" class="section">
-
-<h2 class="en">Our Services</h2>
-<h2 class="hi">हमारी सेवाएँ</h2>
+<h2 class="en reveal-hidden">Our Premium Services</h2>
+<h2 class="hi reveal-hidden">हमारी प्रीमियम सेवाएँ</h2>
 
 <div class="grid">
-
-<div class="card">
-<h3>Bike Repair</h3>
-<p>Professional motorcycle repair service.</p>
+<div class="card reveal-hidden delay-1">
+<h3 class="en">Bike Repair & Servicing</h3>
+<h3 class="hi">बाइक रिपेयर और सर्विसिंग</h3>
+<p class="en">Comprehensive regular maintenance and professional motorcycle repair service with care and precision.</p>
+<p class="hi">सटीकता के साथ व्यापक नियमित रखरखाव और पेशेवर मोटरसाइकिल मरम्मत सेवा।</p>
 </div>
-
-<div class="card">
-<h3>Engine Oil</h3>
-<p>High quality engine oils available.</p>
+<div class="card reveal-hidden delay-2">
+<h3 class="en">Engine & Performance Oils</h3>
+<h3 class="hi">इंजन और परफॉरमेंस ऑयल</h3>
+<p class="en">High quality, imported & domestic engine oils available for smooth, long-lasting performance.</p>
+<p class="hi">सुचारू, लंबे समय तक चलने वाले प्रदर्शन के लिए उच्च गुणवत्ता वाले इंजन तेल उपलब्ध हैं।</p>
 </div>
-
-<div class="card">
-<h3>Spare Parts</h3>
-<p>Original spare parts available.</p>
+<div class="card reveal-hidden delay-3">
+<h3 class="en">OEM Spare Parts</h3>
+<h3 class="hi">OEM स्पेयर पार्ट्स</h3>
+<p class="en">Original spare parts available for all major bike brands including Hero, Honda, Bajaj, TVS.</p>
+<p class="hi">हीरो, होंडा, बजाज, टीवीएस सहित सभी प्रमुख बाइक ब्रांडों के लिए मूल स्पेयर पार्ट्स।</p>
 </div>
-
-<div class="card">
-<h3>Accessories</h3>
-<p>Helmets, guards and bike accessories.</p>
+<div class="card reveal-hidden delay-4">
+<h3 class="en">Bike Accessories</h3>
+<h3 class="hi">बाइक एक्सेसरीज</h3>
+<p class="en">Helmets, leg guards, seat covers, customized styling, and security accessories for safety.</p>
+<p class="hi">हेलमेट, लेग गार्ड, सीट कवर, स्टाइलिश और सुरक्षा के लिए एक्सेसरीज।</p>
 </div>
-
 </div>
-
 </section>
-
 
 <!-- GALLERY -->
-
 <section id="gallery" class="section">
-
-<h2 class="en">Shop Gallery</h2>
-<h2 class="hi">दुकान की गैलरी</h2>
+<h2 class="en reveal-hidden">Shop Gallery</h2>
+<h2 class="hi reveal-hidden">दुकान की गैलरी</h2>
 
 <div class="gallery">
-
-<img src="papa shop.jpg" alt="Shop">
-
-<img src="father shree.jpg" alt="Owner">
-
-<img src="father shree 0.1.jpg" alt="Service Banner">
-
+<img src="papa shop.jpg" alt="LK Auto Shop" class="reveal-hidden delay-1">
+<img src="father shree.jpg" alt="LK Auto Owner" class="reveal-hidden delay-2">
+<img src="father shree 0.1.jpg" alt="LK Auto Services Banner" class="reveal-hidden delay-3">
 </div>
-
 </section>
-
 
 <!-- CUSTOMER REVIEWS -->
-
 <section id="reviews" class="section">
-
-<h2 class="en">Customer Reviews</h2>
-<h2 class="hi">ग्राहक समीक्षा</h2>
+<h2 class="en reveal-hidden">Customer Reviews</h2>
+<h2 class="hi reveal-hidden">ग्राहक समीक्षा</h2>
 
 <div class="grid">
-
-<div class="card">
-
-⭐⭐⭐⭐⭐
-
-<p class="en">Best bike repair shop in Kotwa.</p>
-<p class="hi">कोटवा की सबसे अच्छी बाइक रिपेयर दुकान।</p>
-
+<div class="card reveal-hidden delay-1">
+<div class="stars" style="color:#fbbf24; font-size:24px; margin-bottom:10px;">★★★★★</div>
+<p class="en">"Best bike repair shop in Kotwa. The mechanics are highly skilled and efficient."</p>
+<p class="hi">"कोटवा की सबसे अच्छी बाइक रिपेयर दुकान। मैकेनिक बहुत ही कुशल हैं।"</p>
 </div>
-
-<div class="card">
-
-⭐⭐⭐⭐⭐
-
-<p class="en">Very good service and genuine parts.</p>
-<p class="hi">बहुत अच्छी सर्विस और असली पार्ट्स।</p>
-
+<div class="card reveal-hidden delay-2">
+<div class="stars" style="color:#fbbf24; font-size:24px; margin-bottom:10px;">★★★★★</div>
+<p class="en">"Very good service and genuine parts at an affordable price. My go-to shop!"</p>
+<p class="hi">"कम दाम में बहुत अच्छी सर्विस और असली पार्ट्स। मेरा पसंदीदा दुकान!"</p>
 </div>
-
-<div class="card">
-
-⭐⭐⭐⭐⭐
-
-<p class="en">Fast and affordable bike repair.</p>
-<p class="hi">तेज़ और सस्ती बाइक रिपेयर।</p>
-
+<div class="card reveal-hidden delay-3">
+<div class="stars" style="color:#fbbf24; font-size:24px; margin-bottom:10px;">★★★★★</div>
+<p class="en">"Fast issue resolution. My bike feels brand new. Thank you LK Auto!"</p>
+<p class="hi">"मेरी बाइक एकदम नई जैसी हो गई है। धन्यवाद एल के ऑटो!"</p>
 </div>
-
 </div>
-
 </section>
 
-
 <!-- CONTACT -->
-
 <section id="contact" class="section">
-
-<h2 class="en">Contact LK AUTO</h2>
+<div class="contact-box reveal-hidden">
+<h2 class="en">Visit LK AUTO</h2>
 <h2 class="hi">संपर्क करें</h2>
 
-<p>📍 Overbridge West, Kotwa Bazar, Motihari</p>
-
-<p>📞 9801236695</p>
+<p class="contact-text">📍 Overbridge West, Kotwa Bazar, Motihari</p>
+<p class="contact-text">📞 +91 9801236695</p>
 
 <iframe
 src="https://www.google.com/maps?q=Kotwa+Bazar+Motihari&output=embed"
 width="100%"
 height="350"
+class="map reveal-hidden delay-2"
 style="border:0;"
 loading="lazy">
 </iframe>
-
+</div>
 </section>
 
-
 <footer>
-
-<p>© 2025 LK AUTO</p>
-
+<p>© 2026 LK AUTO | Premium Services and Care</p>
 </footer>
 
-
-<!-- WHATSAPP BUTTON -->
-
-<a href="https://wa.me/919801236695" class="whatsapp">
-WhatsApp
+<!-- FLOAT BUTTONS -->
+<a href="https://wa.me/919801236695" class="whatsapp reveal-hidden delay-4">
+<span style="margin-right:8px">💬</span> WhatsApp
+</a>
+<a href="tel:9801236695" class="callbtn reveal-hidden delay-4">
+<span style="margin-right:8px">📞</span> Call
 </a>
 
-
-<!-- CALL BUTTON -->
-
-<a href="tel:9801236695" class="callbtn">
-Call
-</a>
-
-
-<!-- LANGUAGE SCRIPT -->
-
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
-
-function setLanguage(lang){
-
-if(lang=="hi"){
-
-document.querySelectorAll(".en").forEach(el=>el.style.display="none")
-document.querySelectorAll(".hi").forEach(el=>el.style.display="block")
-
+// Translation logic
+function setLanguage(lang) {
+    if(lang === "hi") {
+        document.querySelectorAll(".en").forEach(el => el.style.display = "none");
+        document.querySelectorAll(".hi").forEach(el => el.style.display = "block");
+    } else {
+        document.querySelectorAll(".en").forEach(el => el.style.display = "block");
+        document.querySelectorAll(".hi").forEach(el => el.style.display = "none");
+    }
 }
+setLanguage("en");
 
-else{
+// Smooth Scroll with Lenis
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    direction: 'vertical',
+    gestureDirection: 'vertical',
+    smooth: true,
+    mouseMultiplier: 1,
+    smoothTouch: false,
+    touchMultiplier: 2,
+    infinite: false,
+})
 
-document.querySelectorAll(".en").forEach(el=>el.style.display="block")
-document.querySelectorAll(".hi").forEach(el=>el.style.display="none")
-
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
 }
+requestAnimationFrame(raf)
 
+// GSAP ScrollTrigger setup
+gsap.registerPlugin(ScrollTrigger);
+
+// Custom Cursor
+const cursor = document.querySelector('.cursor');
+const follower = document.querySelector('.cursor-follower');
+
+document.addEventListener('mousemove', (e) => {
+    gsap.to(cursor, { x: e.clientX, y: e.clientY, duration: 0, ease: "power2.out" });
+    gsap.to(follower, { x: e.clientX, y: e.clientY, duration: 0.15, ease: "power2.out" });
+});
+
+// Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
+
+// Magnetic Buttons
+document.querySelectorAll('.btn, .lang-btn, .logo').forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+        const position = el.getBoundingClientRect();
+        const x = e.clientX - position.left - position.width / 2;
+        const y = e.clientY - position.top - position.height / 2;
+        gsap.to(el, { x: x * 0.3, y: y * 0.3, duration: 0.5, ease: "power2.out" });
+        cursor.classList.add('active');
+        follower.classList.add('active');
+    });
+    el.addEventListener('mouseleave', () => {
+        gsap.to(el, { x: 0, y: 0, duration: 0.5, ease: "elastic.out(1, 0.3)" });
+        cursor.classList.remove('active');
+        follower.classList.remove('active');
+    });
+});
+
+// Intro Animation
+const tl = gsap.timeline();
+tl.to(".logo-circle", { strokeDashoffset: 0, duration: 1.5, ease: "power2.inOut" })
+  .fromTo(".logo-letters, .logo-accent", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.2 }, "-=0.5")
+  .fromTo(".logo-text", { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: 0.8 }, "-=0.5")
+  .fromTo("nav a, .lang-btn", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 }, "-=0.5");
+
+// Intersection Observer for Elements
+const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.15
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-show');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.reveal-hidden').forEach(el => observer.observe(el));
+
+// Initialize Particles.js
+if(window.particlesJS) {
+    particlesJS("particles-js", {
+        "particles": {
+            "number": { "value": 50, "density": { "enable": true, "value_area": 800 } },
+            "color": { "value": ["#ff5722", "#ff9800", "#ffffff"] },
+            "shape": { "type": "circle" },
+            "opacity": { "value": 0.3, "random": true },
+            "size": { "value": 3, "random": true },
+            "line_linked": { "enable": true, "distance": 150, "color": "#ff5722", "opacity": 0.15, "width": 1 },
+            "move": { "enable": true, "speed": 1, "direction": "none", "random": true, "straight": false, "out_mode": "out", "bounce": false }
+        },
+        "interactivity": {
+            "detect_on": "window",
+            "events": {
+                "onhover": { "enable": true, "mode": "repulse" },
+                "onclick": { "enable": true, "mode": "push" },
+                "resize": true
+            },
+            "modes": {
+                "repulse": { "distance": 100, "duration": 0.4 },
+                "push": { "particles_nb": 2 }
+            }
+        },
+        "retina_detect": true
+    });
 }
-
-setLanguage("en")
-
 </script>
-
 </body>
 </html>
